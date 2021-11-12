@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/67ba3ce722.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="mobile"> -->
+    <!-- <div class="screen-area"> -->
+    <!-- <div class="camera-section"></div> -->
+    <div class="main-container welcome-page">
+
+        <!-- welcome page -->
+        <div class="welcome-container">
+            <h1>Welcome!
+               <img src="./images/red-flower.svg" alt=""> 
+            </h1>
+            <p class="about">You have been shortlisted for the role of UI/UX Intern at Hybrwolabs Technologies. To
+                proceed with
+                the next step of Recruitment procedure, we would like you to attempt a small assessment test which
+                will help us to proceed further. </p>
+            <form action="">
+                <label class="label-name" for="username">Name <span>*</span> </label>
+                <input type="text" id="username" placeholder="Enter full name">
+                <span>required</span>
+                <label class="label-phone" for="phone"> Phone <span>*</span> </label>
+                <input type="text" id="phone" placeholder="Mobile number">
+                <span>required</span>
+                <button class="next-btn" id="next">Next <i class="fas fa-chevron-right"></i></button>
+            </form>
+        </div>
+        <!-- countdown page -->
+        <div class="countdown">
+            <span id="count">5</span>
+        </div>
+        <!-- quiz page -->
+        <div class="quiz-container">
+            <div class="timer-section">
+                <div class="timer">
+                    <img src="./images/watch.svg" alt="">
+                    <span id="min">15</span>:<span id="sec">00</span>
+                </div>
+                <button class="submit">
+                    submit
+                    <img src="./images/arrow.svg" alt="">
+                </button>
+            </div>
+            <div class="progress-section">
+                <p>Question <span id="question-number">1</span><span class="total-questions">/15</span> </p>
+                <div class="chart">
+                    <img src="./images/chart.svg" alt="">
+                    <img src="./images/chart2.svg" alt="">
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-done"></div>
+                </div>
+            </div>
+            <div class="box-shadow">
+                <div class="question-card">
+                    <div class="question-number-section">
+                        <span class="question-number"><span id="question-number-for-card">1</span>.</span>
+                        <button class="review-button">Mark for review <img src="./images/flower.svg" alt=""></button>
+                    </div>
+
+                    <h4 id="question">
+                        India’s first satellite of 2020 GSAT-30 was successfully launched is a
+                    </h4>
+                    <div class="options">
+                        <button class="option-btn">A. <span id="option1"> Remote Satellite </span></button>
+                        <button class="option-btn">B. <span id="option2"> Communication Satellite </span></button>
+                        <button class="option-btn">C. <span id="option3"> Spy Satellite </span></button>
+                        <button class="option-btn">D. <span id="option4"> Metrological Satellite </span></button>
+                    </div>
+                    <button id="attempt" class="attempt">Attempt!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+</body>
+<script src="./app.js"></script>
+
+</html>
